@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-ltr.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script src="email-validation.js"></script>
+  </head>
+  <body>
+    <main class="content-col">
+      <header>
+        <img src="images\ping.svg" alt="Ping logo" style="width:86px;height:26px;" />
+      </header>
+      <h1>We are launching <strong>soon!</strong>
+      </h1>
+      <p>Subscribe and get notified</p>
+      <form action="" id="subscription-form">
+        <div class="email-submit">
+          <input type="email" id="email" title="Type your email" placeholder="Your email address..." required />
+          <span id="error-message"></span>
+          <input type="submit" value="Notify Me" />
+        </div>
+        
+      </form>
+      <img src="images\illustration-dashboard.png" alt="illustration dashboard" style="width:1280px;height:782px;" />
+      <footer>
+        <p class="footer-text"> &copy; Copyright Ping. All rights reserved. </p>
+      </footer>
+    </main>
+  </body>
 </html>
